@@ -6,13 +6,16 @@ from pyrob.api import *
 @task
 def task_3_3():
     if not wall_is_on_the_right():
-        elif move_right()
-    if not wall_is_above():
-        else move_up()
-    if not wall_is_on_the_left():
-        else move_left()
-    if not wall_is_beneath():
-        else move_down()
+        move_right()
+    elif not wall_is_above():
+        move_up()
+    elif not wall_is_beneath():
+        move_down()
+    elif not wall_is_on_the_left():
+        move_left()
+        
+        
+
         
     pass
 
