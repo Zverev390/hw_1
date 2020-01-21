@@ -3,7 +3,7 @@
 from pyrob.api import *
 
 
-@task
+@task(delay=0.0002)
 def task_1_1():
     move_down()
     move_right(2)

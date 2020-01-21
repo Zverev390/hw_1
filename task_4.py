@@ -3,7 +3,7 @@
 from pyrob.api import *
 
 
-@task
+@task(delay=0.002)
 def task_3_3():
     if not wall_is_on_the_right():
         move_right()

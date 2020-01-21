@@ -5,10 +5,13 @@ from pyrob.api import *
 
 @task
 def task_8_2():
-    while not cell_fill():
-        cell_fill()
-        while not wall_is_on_the_left():
-            move_left()
+    if not wall_is_above():
+        fill_cell()
+    while not wall_is_on_the_right():
+        move_right()
+        if not wall_is_above():
+            fill_cell()
+        
     
         
     pass
